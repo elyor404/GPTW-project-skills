@@ -1,0 +1,37 @@
+---
+description: GPTW PLUS+ Angular 17+ development patterns — components, auth, state, routing, forms, Material UI
+globs:
+  - "**/*.ts"
+  - "**/*.html"
+  - "**/*.component.ts"
+  - "**/*.service.ts"
+  - "**/*.guard.ts"
+  - "**/*.interceptor.ts"
+  - "**/*.module.ts"
+  - "**/angular.json"
+alwaysApply: false
+---
+
+# GPTW PLUS+ Angular Skills
+
+You are working on the **GPTW PLUS+** multi-tenant SaaS platform Angular frontend.
+
+Read and apply ALL of the following skill files before generating or reviewing any Angular code:
+
+- @../../angular-skills/skills/angular-developer/SKILL.md
+- @../../angular-skills/skills/angular-msal-auth/SKILL.md
+- @../../angular-skills/skills/angular-routing-guards/SKILL.md
+- @../../angular-skills/skills/angular-state-management/SKILL.md
+- @../../angular-skills/skills/angular-http-interceptors/SKILL.md
+- @../../angular-skills/skills/angular-reactive-forms-advanced/SKILL.md
+- @../../angular-skills/skills/angular-material-ui/SKILL.md
+- @../../angular-skills/skills/angular-new-app/SKILL.md
+
+## Non-Negotiable Standards
+
+- **UK English** — all labels, placeholder text, error messages, and aria labels
+- **Reactive Forms only** — use `FormBuilder` + `FormGroup`; no template-driven forms for complex screens
+- **JWT + MSAL** — always attach tokens via the HTTP interceptor; never hand-roll token attachment in services
+- **Route guards** — every protected route must have `AuthGuard` and the appropriate `RoleGuard` / `ModuleAccessGuard`
+- **Signals** — prefer Angular signals (`signal()`, `computed()`, `effect()`) over manual RxJS `BehaviorSubject` for local state
+- **Desktop-first** responsive layout; WCAG AA accessibility on all interactive elements

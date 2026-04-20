@@ -1,0 +1,38 @@
+---
+description: GPTW PLUS+ .NET 8 coding standards, architecture patterns, Azure services, EF Core, and testing
+globs:
+  - "**/*.cs"
+  - "**/*.csproj"
+  - "**/*.sln"
+  - "**/appsettings*.json"
+alwaysApply: false
+---
+
+# GPTW PLUS+ .NET Skills
+
+You are working on the **GPTW PLUS+** multi-tenant SaaS platform backend.
+
+Read and apply ALL of the following skill files before generating or reviewing any .NET code:
+
+- @../../dotnet-skills/skills/csharp-coding-standards/SKILL.md
+- @../../dotnet-skills/skills/csharp-type-design-performance/SKILL.md
+- @../../dotnet-skills/skills/clean-architecture-dotnet/SKILL.md
+- @../../dotnet-skills/skills/aspnet-core-webapi/SKILL.md
+- @../../dotnet-skills/skills/microsoft-entra-id-auth/SKILL.md
+- @../../dotnet-skills/skills/entity-framework-postgresql/SKILL.md
+- @../../dotnet-skills/skills/database-performance/SKILL.md
+- @../../dotnet-skills/skills/multi-tenant-patterns/SKILL.md
+- @../../dotnet-skills/skills/azure-openai-integration/SKILL.md
+- @../../dotnet-skills/skills/azure-blob-storage/SKILL.md
+- @../../dotnet-skills/skills/azure-functions/SKILL.md
+- @../../dotnet-skills/skills/azure-communication-services/SKILL.md
+- @../../dotnet-skills/skills/xunit-testing-patterns/SKILL.md
+
+## Non-Negotiable Standards
+
+- **UK English** in all code comments, exception messages, and logs
+- **Multi-tenant isolation** — every EF Core query must go through global query filters; never bypass them
+- **Clean Architecture** — keep Domain pure; no EF Core or HTTP references in the Domain layer
+- **Async-only** — no `.Result`, `.Wait()`, or blocking calls; propagate `CancellationToken` everywhere
+- **Result pattern** — use `Result<T>` / `Result` for expected failures; reserve exceptions for truly unexpected errors
+- **Nullable reference types** enabled (`<Nullable>enable</Nullable>`); eliminate all `?` suppressions (`!`)

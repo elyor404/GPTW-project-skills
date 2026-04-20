@@ -1,0 +1,24 @@
+{
+  "name": "gptw-dotnet-skills",
+  "version": "1.0.0",
+  "description": ".NET 8 development skills for GPTW PLUS+ platform",
+  "skills": [
+    "./skills/csharp-coding-standards",
+    "./skills/csharp-type-design-performance",
+    "./skills/database-performance",
+    "./skills/aspnet-core-webapi",
+    "./skills/azure-openai-integration",
+    "./skills/entity-framework-postgresql",
+    "./skills/azure-blob-storage",
+    "./skills/microsoft-entra-id-auth",
+    "./skills/clean-architecture-dotnet",
+    "./skills/azure-functions",
+    "./skills/multi-tenant-patterns",
+    "./skills/azure-communication-services",
+    "./skills/xunit-testing-patterns"
+  ],
+  "agents": [
+    "./agents/dotnet-concurrency-specialist.md",
+    "./agents/dotnet-performance-analyst.md"
+  ]
+}

@@ -1,0 +1,30 @@
+---
+description: GPTW PLUS+ UI design patterns — Tailwind CSS components, responsive dashboards, Fabric.js canvas
+globs:
+  - "**/*.html"
+  - "**/*.css"
+  - "**/*.scss"
+  - "**/*.sass"
+  - "**/tailwind.config*"
+  - "**/fabric*.ts"
+  - "**/canvas*.ts"
+alwaysApply: false
+---
+
+# GPTW PLUS+ UI Skills
+
+You are working on the **GPTW PLUS+** multi-tenant SaaS platform UI layer.
+
+Read and apply ALL of the following skill files before generating or reviewing any UI/CSS code:
+
+- @../../ui-skills/skills/tailwind-css-components/SKILL.md
+- @../../ui-skills/skills/responsive-dashboard-design/SKILL.md
+- @../../ui-skills/skills/fabricjs-canvas/SKILL.md
+
+## Non-Negotiable Standards
+
+- **Desktop-first** — design for 1280px wide; then add responsive breakpoints down to tablet (768px)
+- **UK English** — all visible text in the UI (labels, tooltips, placeholders, notifications)
+- **WCAG AA** — minimum 4.5:1 contrast ratio, keyboard accessibility, proper ARIA attributes
+- **Brand consistency** — follow GPTW colour palette and typography in every component
+- **No inline styles** — use Tailwind utility classes or SCSS variables; avoid `style=""` attributes
